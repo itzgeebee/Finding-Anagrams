@@ -10,10 +10,10 @@ def find_anagram(word, anagram):
         count = 0
         for i in anagram:
             if i in word:
-                count +=1
+                count += 1
         if count == len(word):
             return True
 
     return False
 
-print(find_anagram("kill", "lik"))
+
