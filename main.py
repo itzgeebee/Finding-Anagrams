@@ -7,6 +7,8 @@
 def find_anagram(word, anagram):
     # [assignment] Add your code here
     if len(word) == len(anagram):
+        word = word.lower()
+        anagram = anagram.lower()
         count = 0
         for i in anagram:
             if i in word:
@@ -15,5 +17,6 @@ def find_anagram(word, anagram):
             return True
 
     return False
+
 
 
