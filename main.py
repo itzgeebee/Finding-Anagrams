@@ -9,14 +9,14 @@ def find_anagram(word, anagram):
     if len(word) == len(anagram):
         word = word.lower()
         anagram = anagram.lower()
-        count = 0
-        for i in anagram:
-            if i in word:
-                count += 1
-        if count == len(word):
+        word = sorted(word)
+        anagram = sorted(anagram)
+
+        if word == anagram:
             return True
 
     return False
+
 
 
 
